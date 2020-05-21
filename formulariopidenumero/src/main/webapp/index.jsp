@@ -12,7 +12,8 @@
     </head>
     <body>
          <form method="GET">
-        <input type="int" placeholder="pon un nuemro " name="numero" pattern="^[0-999]+"/> <br>
+	 <h1> LOS NUMEROS  SON :</h1>	 
+        <input type="number" placeholder="pon un nuemro " name="numero" pattern="^[0-999]+"/> <br>
     <input type= "submit" value="enviar"/><br>
      </form>
          <h1> LOS NUMEROS  SON :</h1>
