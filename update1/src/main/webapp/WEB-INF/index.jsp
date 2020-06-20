@@ -52,27 +52,17 @@
             <tr
                
             
-                  <br><th  class="text-center">#</th>
-                <th  class="text-center">Nombre</th>
-                <th  class="text-center">Contraseña</th>
-                <th>
-                   
-                </th>
-    <th  class="text-center" >Opciones</th>
+                  <br><th>Nombre</th>
+    <th>Contraseña</th>
             </tr>
-            
+                
             </thead>
             <body>
                 <%  while (rs.next()) { %>
             <tr>
             
-        <th><%=rs.getInt("id_usuario")%></th>  
-        <td c><%=rs.getString("usuario") %> </td>
+        <td class="text-center"><%=rs.getString("Nombre") %> </td>
         <td class="text-center"><%=rs.getString("password") %> </td>
-        <td><a class=" btn btn-warning btn-block" href="formularioUsuario.jsp?id=<%=rs.getInt("id_usuario")%>">Editar usuario</a></td>
-        <td><a class="btn btn-danger btn-block" href="eliminarUsuario.jsp?id=<%=rs.getInt("id_usuario")%>">Eliminar </a></td>       
-            
-            
       
        
             </tr>
