@@ -23,19 +23,19 @@
         Class.forName("com.mysql.jdbc.Driver");
          String url= "jdbc:mysql://localhost/usuarios";
          conexion=DriverManager.getConnection("jdbc:mysql://localhost/usuarios", "root", "");
-            stmt=conexion.prepareStatement("INSERT INTO usuario SET Nombre=?,password=?");
-            stmt.setString(1, request.getParameter("Nombre"));
+            stmt=conexion.prepareStatement("INSERT INTO usuario SET usuario=?,password=?");
+            stmt.setString(1, request.getParameter("usuario"));
             stmt.setString(2, getMD5(request.getParameter("password")));
             
          
            stmt.executeUpdate();
             %><div class="alert alert-success" role="alert">
-               se agrego exitosamente a la base de datos el registro:<%out.println(request.getParameter("Nombre")); out.println(", "+getMD5(request.getParameter("password")));%>
+               se agrego exitosamente a la base de datos el registro:<%out.println(request.getParameter("usuario")); out.println(", "+getMD5(request.getParameter("password")));%>
 </div>
     <%
     }catch(Exception e){
 %><div class="alert alert-danger" role="alert"> no se podo agregar el registro por :<%
-       out.println("error "+ e.getMessage());
+       out.println("error"+ e.getMessage());
        %></div><%   
     }
          
@@ -47,7 +47,7 @@
         <title>agregarUsuario</title>
     </head>
     <body  method="POST">
-   <td><a class="btn btn-success btn-block" href="index.jsp"  method="POST">Ver Registro</a></td>
+   <td><a class="btn btn-primary btn-block" href="index.jsp"  method="POST">Ver Registro</a></td>
     </body>
 </html>
 <%!
