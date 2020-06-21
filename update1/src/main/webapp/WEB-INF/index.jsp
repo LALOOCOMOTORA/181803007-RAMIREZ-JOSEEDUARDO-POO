@@ -55,6 +55,7 @@
                   <br><th  class="text-center">#</th>
                 <th  class="text-center">Nombre</th>
                 <th  class="text-center">Contraseña</th>
+                <th  class="text-center">Edad</th>                  
                 <th>
                    
                 </th>
@@ -71,7 +72,7 @@
         <td class="text-center"><%=rs.getString("password") %> </td>
         <td><a class=" btn btn-warning btn-block" href="formularioUsuario.jsp?id=<%=rs.getInt("id_usuario")%>">Editar usuario</a></td>
         <td><a class="btn btn-danger btn-block" href="eliminarUsuario.jsp?id=<%=rs.getInt("id_usuario")%>">Eliminar </a></td>       
-            
+        <th><%=rs.getInt("edad")%></th>    
             
       
        
