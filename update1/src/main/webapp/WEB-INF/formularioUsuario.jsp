@@ -59,6 +59,11 @@
                         <input type="password" class="form-control" placeholder="Contraseña" name="password" required>
                     </div>          
                     <% }%>
+                     <%if (id == 0) {%>
+                    <div class="col">
+                        <input type="password" class="form-control" placeholder="Edad" name="edad" required>
+                    </div>          
+                    <% }%>
                     <div class="col">
                         <input type="submit"  class="btn btn-success  btn-block " value="Enviar"/>
                     </div>
