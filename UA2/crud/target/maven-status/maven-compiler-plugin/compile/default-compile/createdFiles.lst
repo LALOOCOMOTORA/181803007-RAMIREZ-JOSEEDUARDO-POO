@@ -1,0 +1,6 @@
+com\mycompany\boostrap\resources\JavaEE8Resource.class
+Config\Conexion.class
+com\mycompany\boostrap\JAXRSConfiguration.class
+.netbeans_automatic_build
+Dao\Usuario.class
+Dao\UsuarioBD.class
